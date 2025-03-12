@@ -1,13 +1,24 @@
 import TodoName from "./components/TodoName";
 import Todoitem from "./components/Todoitem";
-import Todolist1 from "./components/Todolist1";
-import Todolist2 from "./components/Todolist2";
+import Todoitems from "./components/Todoitems";
 function App() {
+
+  const Items=[{
+    name:"sumit lafaroya",
+    dueDate:"01/23/6252"
+  },
+  {
+    name:"sachin kumar sah",
+    dueDate:"01/23/62dbcn2"
+  }
+]
   return <center>
+   
     <TodoName></TodoName>
     <Todoitem></Todoitem>
-    <Todolist1></Todolist1>
-    <Todolist2></Todolist2>
+    <Todoitems itemsInTod={Items}></Todoitems>
+   
+    
   </center>
 }
 
